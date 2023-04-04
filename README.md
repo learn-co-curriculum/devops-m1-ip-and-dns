@@ -75,7 +75,7 @@ PING google.com (172.217.3.78): 56 data bytes
 64 bytes from 172.217.3.78: icmp_seq=0 ttl=119 time=45.473 ms
 ```
 
-> **Note::** Like in most shell commands that remain running, you can use <ctrl-c> to end the process at any time.
+> **Note:** Like in most shell commands that remain running, you can use `ctrl-c` to end the process at any time.
 
 As you can see, the address in the parenthesis following `google.com` is what `google.com`'s IP address ended up resolving to; that's DNS doing its job! The `time` parameter gives us how long it took for our request to *reach* that IP address + how long it took for our request to be *received* by our device.
 
