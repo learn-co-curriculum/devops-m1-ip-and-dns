@@ -63,11 +63,11 @@ Enter *DNS* (Domain Name System). **DNS** is a distributed system that maps *dom
 
 When a user enters a domain name into a browser, the browser sends a DNS query to a DNS server, which returns an IP address. The DNS server first checks its own cache to see if it has a record for the domain name:
 
-![DNS with cache](https://curriculum-content.s3.amazonaws.com/6685/devops-m1-dns/dns_01.png)
+![DNS with cache](https://curriculum-content.s3.amazonaws.com/6685/devops-m1-dns/dns_02.png)
 
 If it does not, it forwards the request to another DNS server closer to the root. This process continues until a DNS server with a record for the domain name is found:
 
-![DNS without cache](https://curriculum-content.s3.amazonaws.com/6685/devops-m1-dns/dns_02.png)
+![DNS without cache](https://curriculum-content.s3.amazonaws.com/6685/devops-m1-dns/dns_01.png)
 
 ## `ping`
 
