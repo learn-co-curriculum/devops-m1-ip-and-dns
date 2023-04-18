@@ -61,7 +61,13 @@ Both IP addresses and ports make up the backbone of internet communication-- tha
 
 Enter *DNS* (Domain Name System). **DNS** is a distributed system that maps *domain names* to IP addresses. A **domain name** is simply a string of text that is used by DNS in order to map it to an IP address; for example, `google.com`, `speedtest.net`, etc. The owners of these domain names simply point their name to an underlying IP address, allowing users and other devices to access them simply using the domain name.
 
-When a user enters a domain name into a browser, the browser sends a DNS query to a DNS server, which returns an IP address. The DNS server first checks its own cache to see if it has a record for the domain name; if it does not, it forwards the request to another DNS server closer to the root. This process continues until a DNS server with a record for the domain name is found.
+When a user enters a domain name into a browser, the browser sends a DNS query to a DNS server, which returns an IP address. The DNS server first checks its own cache to see if it has a record for the domain name:
+
+![DNS with cache](https://curriculum-content.s3.amazonaws.com/6685/devops-m1-dns/dns_02.png)
+
+If it does not, it forwards the request to another DNS server closer to the root. This process continues until a DNS server with a record for the domain name is found:
+
+![DNS without cache](https://curriculum-content.s3.amazonaws.com/6685/devops-m1-dns/dns_01.png)
 
 ## `ping`
 
